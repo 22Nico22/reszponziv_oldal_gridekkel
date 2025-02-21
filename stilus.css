@@ -1,55 +1,82 @@
+
 body {
-   
+    background-color: greenyellow;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
 header {
+    border: 5px solid black;
+    text-align: center; 
+    padding: 10px;
     background-color: green;
     text-transform: uppercase;
-   
     border-radius: 10px;
-   
 }
-a {
-    color:black;
-  
+
+
+nav a {
+    text-decoration: none;
+    color: black;
     border: 4px solid black;
     border-radius: 8px;
     margin: 5px;
-    white-space: nowrap; /* chatgpt kód */
-    display: inline-block; /*chatgpt kód */
-      
+    white-space: nowrap;
+    display: inline-block;
+    padding: 5px; 
 }
 
-nav {
-    margin-bottom: 10px;
+nav a:hover {
+    background-color: greenyellow;
+}
 
-}
-* {
-    box-sizing: border-box;
-}
 img {
- 
+    width: 100%;
+    height: auto;
     border: 5px solid black;
     border-radius: 10px;
 }
+
+
 section {
+    padding: 10px;
     margin-top: 10px;
-    padding: 5px;
     border: 5px solid black;
     border-radius: 15px;
     background-color: green;
 }
+
 p {
     border: 5px solid black;
     border-radius: 10px;
     background-color: greenyellow;
+    padding: 5px;
 }
+
 article {
-    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
     gap: 10px;
 }
+
+
+@media (max-width: 800px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+}
+
 #bekezdes_footer {
     background-color: green;
     border: 5px solid black;
     font-size: large;
+    text-align: center;
+    padding: 10px;
 }
-
-
