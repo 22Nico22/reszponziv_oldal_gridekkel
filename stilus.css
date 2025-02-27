@@ -1,10 +1,8 @@
-
 body {
     background-color: greenyellow;
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
 
 header {
     border: 5px solid black;
@@ -14,7 +12,6 @@ header {
     text-transform: uppercase;
     border-radius: 10px;
 }
-
 
 nav a {
     text-decoration: none;
@@ -38,10 +35,15 @@ img {
     border-radius: 10px;
 }
 
-
-section {
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
     padding: 10px;
-    margin-top: 10px;
+}
+
+div {
+    padding: 10px;
     border: 5px solid black;
     border-radius: 15px;
     background-color: green;
@@ -53,13 +55,6 @@ p {
     background-color: greenyellow;
     padding: 5px;
 }
-
-article {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px;
-}
-
 
 @media (max-width: 800px) {
     article {
